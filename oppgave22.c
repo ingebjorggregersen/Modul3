@@ -77,7 +77,7 @@ int main() {
         //mapping the shared memory segment to the address space of the child process
         shm_base = mmap(0, SIZE, PROT_READ | PROT_WRITE, MAP_SHARED,shm_fd, 0);
          if (shm_base == MAP_FAILED) {
-            printf("Error. Mapping the shared memory segment ot the adress space of the child failed.");
+            printf("Error. Mapping the shared memory segment of the address space of the child failed.");
             exit(1);
         }
         //start at shared memory base address

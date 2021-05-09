@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -11,16 +12,17 @@ int main()
     //if pid greater than 0 then the code inside if statement is being executed by parent process
     if(pid > 0)
     {
-        printf("This is the parent process");
+        printf("This right here, is the parent process");
         sleep(10);
     }
     else if (pid == 0) 
-    // this code is being executed by child process
+    // this is executed by child process
     {
         
-        printf("This is the child process");
+        printf("This right here, is the child process");
         // terminating the child process
         exit(0);
     }
     return 0;
 }
+

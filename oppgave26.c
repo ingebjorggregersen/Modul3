@@ -26,7 +26,7 @@ void re_cap(char *string)
 
 int main(void)
 {
-    char write_msg[BUFFER_SIZE] = "Grettings!";
+    char write_msg[BUFFER_SIZE] = "Hello there!";
     char read_msg[BUFFER_SIZE];
     int fd[2];
     int fd_cap[2];
@@ -53,9 +53,9 @@ int main(void)
         close(fd[WRITE_END]);
         read(fd[READ_END], read_msg, BUFFER_SIZE);
 
-        printf("child reads: %s\n", read_msg);
+        printf("Child reads: %s\n", read_msg);
         re_cap(&read_msg[0]);
-        printf("child reverses: %s\n", read_msg);
+        printf("Child reverses: %s\n", read_msg);
 
         close(fd[READ_END]);
 

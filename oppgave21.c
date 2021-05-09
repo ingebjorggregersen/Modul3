@@ -36,8 +36,8 @@ int main() {
      else  if (pid== 0) {
         //when the algorithm is continually applied all positive integers will eventually reach 1
         //so we want to print all values until they reach 1
-        // we will use a while loop
-        // we will loop until the value inputed will reach 1
+        // we'll use a while loop
+        // we'll loop until the value inputed will reach 1
           while (i!=1){
 		 //if inputed number is even the division with 2 will return a remainder of 0
 		 //so if remainder is 0 number is even, if it's 1 number is odd
